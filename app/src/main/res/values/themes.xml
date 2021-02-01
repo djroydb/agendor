@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TesteAgendor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.TesteAgendor">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/black_transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Theme.TesteAgendor.NoActionBar" >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.TesteAgendor.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TesteAgendor.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyDatePickerDialogTheme" parent="Base.V7.Theme.AppCompat.Dialog">
+
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlActivated">@color/accent</item>                 <!--selected day-->
+        <item name="android:textColorPrimary">#FFFFFF</item>                        <!--Dias-->
+        <item name="android:textColorSecondary">#FFFF00</item>                      <!--Dias da semana-->
+        <item name="android:windowBackground">@color/white</item>       <!--background-->
+        <item name="android:background">@color/colorPrimary</item>             <!--background-->
+
+    </style>
+    <style
+        name="MyTimePickerWidgetStyle" parent="Base.V7.Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+
+</resources>
