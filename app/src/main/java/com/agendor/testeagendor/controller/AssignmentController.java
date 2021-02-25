@@ -87,7 +87,7 @@ public class AssignmentController {
      * @param done boolean
      * @return boolean
      */
-    public boolean update(Integer id, AssignmentType type, DateTime date, String client, String description, boolean done){
+    public boolean update(Long id, AssignmentType type, DateTime date, String client, String description, boolean done){
         ContentValues values;
         db = database.getWritableDatabase();
         values = new ContentValues();
