@@ -8,12 +8,12 @@ import com.agendor.testeagendor.utils.asyncbase.AsyncTaskBase;
 import com.agendor.testeagendor.utils.asyncbase.DelegateListener;
 import com.agendor.testeagendor.utils.asyncbase.ResponseData;
 
-public class InsertAssignmentTask  extends AsyncTaskBase<Void, Void, Boolean> {
+public class UpdateAssignmentTask extends AsyncTaskBase<Void, Void, Boolean> {
 
     private Context context;
     private Assignment assignment;
 
-    public InsertAssignmentTask(Context context, Assignment assignment, DelegateListener<Boolean> delegate) {
+    public UpdateAssignmentTask(Context context, Assignment assignment, DelegateListener<Boolean> delegate) {
         super(context, delegate);
         this.context = context;
         this.assignment = assignment;
@@ -27,12 +27,12 @@ public class InsertAssignmentTask  extends AsyncTaskBase<Void, Void, Boolean> {
 
         try {
             control = new AssignmentController(context);
-            success = control.insert(assignment.getType(), assignment.getDate(), assignment.getClient(), assignment.getDescription(), assignment.isDone());
-        } catch (Exception e) {
-            message = e.getMessage();
+            success = control.update(assignment.getId(), assignment.getType(), assignment.getDate(),
+                    assignment.getClient(), assignment.getDescription(), assignment.isDone());
+        }catch (Exception exception){
+            message = exception.getMessage();
         }
 
-
-        return new ResponseData<>(success, message, success);
+        return new ResponseData<>(success,message,success);
     }
 }
