@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.agendor.testeagendor.R;
-import com.agendor.testeagendor.model.Assignment;
+import com.agendor.testeagendor.domain.model.Assignment;
 import com.agendor.testeagendor.model.enums.AssignmentType;
 
 import org.joda.time.format.DateTimeFormat;

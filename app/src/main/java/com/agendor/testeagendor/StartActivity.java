@@ -6,20 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.agendor.testeagendor.view.AgendorActivity;
-import com.agendor.testeagendor.view.AssignmentListActivity;
+import com.agendor.testeagendor.view.main.AssignmentListActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class StartActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_start);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(MainActivity.this, AssignmentListActivity.class));
+                startActivity(new Intent(StartActivity.this, AssignmentListActivity.class));
             }
         }, 2000);
     }

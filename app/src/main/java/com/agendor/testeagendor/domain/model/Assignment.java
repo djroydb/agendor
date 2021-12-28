@@ -1,12 +1,10 @@
-package com.agendor.testeagendor.model;
+package com.agendor.testeagendor.domain.model;
 
 
 import com.agendor.testeagendor.model.enums.AssignmentType;
 
 
 import org.joda.time.DateTime;
-
-import java.util.Calendar;
 
 public class Assignment implements Comparable<Assignment>{
 

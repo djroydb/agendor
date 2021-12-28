@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 import com.agendor.testeagendor.R;
-import com.agendor.testeagendor.model.IconToolbar;
+import com.agendor.testeagendor.domain.model.IconToolbar;
 import com.agendor.testeagendor.model.enums.AssignmentType;
 
 public class CustomIconToolbar  extends LinearLayout {

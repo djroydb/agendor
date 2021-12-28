@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:theme="@style/Theme.Transparent"
-    tools:context=".view.AgendorActivity">
+    tools:context=".view.addassignment.AddAssignmentActivity">
 
 
     <LinearLayout
@@ -38,7 +38,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:orientation="horizontal">
-                    <ToggleButton
+                    <RadioButton
                         android:id="@+id/email"
                         android:layout_width="38dp"
                         android:layout_height="38dp"
@@ -52,7 +52,7 @@
                         android:onClick="onToggleClicked"
                         android:tag="EMAIL"
                         />
-                    <ToggleButton
+                    <RadioButton
                         android:id="@+id/ligacao"
                         android:layout_width="38dp"
                         android:layout_height="38dp"
@@ -66,7 +66,7 @@
                         android:onClick="onToggleClicked"
                         android:tag="LIGACAO"
                         />
-                    <ToggleButton
+                    <RadioButton
                         android:id="@+id/proposta"
                         android:layout_width="38dp"
                         android:layout_height="38dp"
@@ -80,7 +80,7 @@
                         android:onClick="onToggleClicked"
                         android:tag="PROPOSTA"
                         />
-                    <ToggleButton
+                    <RadioButton
                         android:id="@+id/reuniao"
                         android:layout_width="38dp"
                         android:layout_height="38dp"
@@ -94,7 +94,7 @@
                         android:onClick="onToggleClicked"
                         android:tag="REUNIAO"
                         />
-                    <ToggleButton
+                    <RadioButton
                         android:id="@+id/visita"
                         android:layout_width="38dp"
                         android:layout_height="38dp"
@@ -108,7 +108,7 @@
                         android:onClick="onToggleClicked"
                         android:tag="VISITA"
                         />
-                    <ToggleButton
+                    <RadioButton
                         android:id="@+id/outro"
                         android:layout_width="38dp"
                         android:layout_height="38dp"
@@ -166,6 +166,7 @@
                 android:padding="5dp"
                 android:gravity="center"
                 android:background="@drawable/edit_border">
+
                 <TextView
                     android:id="@+id/dateText"
                     android:layout_width="match_parent"

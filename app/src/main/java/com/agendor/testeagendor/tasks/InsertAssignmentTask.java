@@ -3,7 +3,7 @@ package com.agendor.testeagendor.tasks;
 import android.content.Context;
 
 import com.agendor.testeagendor.controller.AssignmentController;
-import com.agendor.testeagendor.model.Assignment;
+import com.agendor.testeagendor.domain.model.Assignment;
 import com.agendor.testeagendor.utils.asyncbase.AsyncTaskBase;
 import com.agendor.testeagendor.utils.asyncbase.DelegateListener;
 import com.agendor.testeagendor.utils.asyncbase.ResponseData;

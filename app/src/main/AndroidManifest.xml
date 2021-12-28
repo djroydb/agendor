@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TesteAgendor">
-        <activity android:name=".MainActivity">
+        <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -17,12 +17,12 @@
         </activity>
 
         <activity
-            android:name=".view.AssignmentListActivity"
+            android:name=".view.main.AssignmentListActivity"
             android:label="@string/title_activity_assignment_list"
             android:theme="@style/Theme.TesteAgendor.NoActionBar" />
 
         <activity
-            android:name=".view.AgendorActivity"
+            android:name=".view.addassignment.AddAssignmentActivity"
             android:theme="@style/Theme.Transparent" />
     </application>
 

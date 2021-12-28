@@ -1,4 +1,4 @@
-package com.agendor.testeagendor.model;
+package com.agendor.testeagendor.domain.model;
 
 import com.agendor.testeagendor.model.enums.AssignmentType;
 
